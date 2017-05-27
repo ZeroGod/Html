@@ -1,0 +1,528 @@
+/**
+ * Author:zhouxiong
+ * CreateTime:2017-05-17
+ * QQ:978133539   
+ * Email:zhouxiong@zhongjiu.cn 
+ */
+
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    font-size: 62.5%;
+}
+
+body {
+    width: 100%;
+    text-align: center;
+    font-family: "Arial Normal","Arial";
+    color: #333333;
+    line-height: 20px;
+    /*background:  url(6.jpg) repeat; */
+    background-color: #fff
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.clear {
+    clear: both;
+    width: 100%;
+    height: 0px;
+    overflow: hidden;
+}
+
+.hidden {
+    display: none;
+}
+
+/*清除浮动*/
+.clearfix:after {
+    clear: both;
+    content: ' ';
+    display: block;
+    font-size: 0;
+    line-height: 0;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+
+* html .clearfix, *:first-child + html .clearfix {
+    zoom: 1;
+}
+
+ul, li {
+   /* list-style-type: none;*/
+}
+
+i, em, b {
+    font-style: normal;
+}
+
+img {
+    border: none;
+    vertical-align: middle;
+}
+
+a {
+   /* text-decoration: none;*/
+    border: none;
+}
+
+    a:link {
+        color: #333333;
+       /* text-decoration: none;*/
+    }
+
+    a:visited {
+        color: #333333;
+        /*text-decoration: none;*/
+    }
+
+    a:hover {
+       /* text-decoration: none;*/
+        color: #333333;
+    }
+
+    a:active {
+        color: #333333;
+        /*text-decoration: none;*/
+    }
+
+    #content {
+        background:  url(6.jpg) repeat; 
+    }
+#container {
+    /* background: #000 none repeat scroll 0 0;*/
+    background: #fff;
+    /*min-height: 300px;*/
+}
+
+/*头部导航*/
+#header {
+   /* background: #000 none repeat scroll 0 0;*/
+    color: #333333;
+    font-size: 1.8rem;
+    line-height: 33rem;
+    text-align: center;
+    width: 100%;
+    padding-top: 20rem;
+}
+
+.tips {
+    font-size: 14rem;
+    margin-top: 10rem;
+
+}
+
+.shop-list {
+    text-align: left;
+    margin-left: 20rem;
+}
+
+.shop-list ul li {
+    overflow: hidden;
+    font-size: 14rem;
+    padding-top: 8rem;
+    padding-bottom:5rem;
+}
+.timer {
+    font-size: 15px;
+    padding-top: 15px;
+    padding-bottom:15px;
+    color: #fff;
+}
+
+#wrapper {
+    background: #1B1A1F none repeat scroll 0 0;
+    line-height: 44px;
+    min-height: 44px;
+    position: relative;
+    width: 100%;
+    border-bottom: 1px solid #e8e8e8;
+}
+.header-wrapper a {
+    color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+    overflow: hidden;
+    text-align: center;
+    text-decoration: none;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    
+}
+.header-wrapper .login {
+    height: 100%;
+    position: absolute;
+    right: 10px;
+    color: #000;
+    width: auto;
+}
+.header-wrapper .logo {
+    left: 10px;
+    max-width: 64px;
+    color: #000;
+    position: absolute;
+}
+.header-wrapper .logo img {
+    width: 100%;
+}
+#wrapper .title {
+    color: #fff;
+    font-size: 21px;
+    text-align: center;
+}
+
+.bg-white {
+    background: #fff none repeat scroll 0 0;
+}
+
+
+.mx-list {
+    border-bottom: 1px solid #e8e8e8;
+    box-sizing: border-box;
+    padding: 5px 10px 0;
+    position: relative;
+    padding: 10px;
+}
+
+
+.peo-rig {
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.rank-rig-row1 .lef {
+    width: 60%;
+}
+.rank-rig-row1 .lef, .rank-rig-row1 .rig, .rank-rig-row2 .lef, .rank-rig-row2 .rig {
+    box-sizing: border-box;
+}
+.rank-rig-row1 p, .rank-rig-row2 p {
+    line-height: 28px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.ft16 {
+    font-size: 1.6rem;
+}
+
+.ft15 {
+    font-size: 1.5rem;
+}
+
+.ft14 {
+    font-size: 1.4rem;
+}
+
+.ft12 {
+    font-size: 1.2rem;
+}
+
+.ft11 {
+    font-size: 1.1rem;
+}
+
+.padL10 {
+    padding-left: 10px;
+    text-align: left;
+}
+.fl {
+    float: left;
+}
+
+.rt {
+    float: right;
+}
+.w-gray88 {
+    color: #888;
+}
+
+.rank-rig-row2 .lef {
+    width: 60%;
+}
+.rank-rig-row1 .rig {
+    width: 30%;
+}
+.rank-rig-row1 .lef, .rank-rig-row1 .rig, .rank-rig-row2 .lef, .rank-rig-row2 .rig {
+    box-sizing: border-box;
+}
+.rank-rig-row1 p, .rank-rig-row2 p {
+    line-height: 28px;
+}
+.rank-rig-row1 p, .rank-rig-row2 p {
+    line-height: 28px;
+}
+
+
+/**
+    积分查询
+*/
+
+
+.ax_shape {
+    color: #333333;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+    height: 110px;
+}
+
+
+#u40 {
+    /*height: 25px;
+    width: 25px;*/
+    right: 20px;
+    position: absolute;
+    top: 10px;  
+}
+
+.jf_header {
+    position: relative;
+}
+/*积分用户*/
+.jf_user {
+    padding-top: 40px;
+    padding-bottom: 15px;
+    background-color: #9CDEDD;
+}
+
+.score {
+    /*color: #868686;*/
+    color: #333333;
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.label {
+    color: #333333;
+}
+
+.txtdir {
+   /* text-align: left;*/
+    /*margin-left: 20px;*/
+    margin-top: 10px;
+}
+
+
+#u28_img {
+    height: 23px;
+    left: 0;
+    top: 0;
+    width: 23px;
+}
+
+.helper {
+    height: 50px;
+    left: 0;
+    text-align: left;
+    padding-left: 20px;
+    line-height: 50px;
+}
+
+.borderline {
+    border-bottom: 1px solid #e8e8e8;
+}
+
+
+#u11 {
+    color: #ffffff;
+    font-size: 11px;
+    height: 37px;
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    line-height: 37px;
+}
+
+/*底部按钮*/
+.w-bind--link {
+    background: #ccc none repeat scroll 0 0;
+    color: #000;
+    display: block;
+}
+
+/*顶端导航*/
+.top-menu:after {
+    border-top: 5px solid #888;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    bottom: 0;
+    content: " ";
+    height: 0;
+    top: 50%;
+    margin-left: 3px;
+    position: absolute;
+    width: 0;
+    margin-top: -6px;
+}
+
+.dir_top:after {
+    border-bottom: 5px solid transparent;
+    border-left: 5px solid #888;
+    border-top: 5px solid transparent;
+}
+
+.item {
+    display: inline-block;
+    width: 90%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.store {
+    left: 0;
+    text-align: left;
+    padding-left: 20px;
+    padding-right: 20px;
+    position: relative;
+}
+
+/*终端头像*/
+.logo_img {
+    position: absolute;
+    top: 15px;
+    
+}
+.img_store {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+}
+.store_info {
+    padding: 15px 0 15px 70px;
+}
+.user_tel {
+    display: inline-block;
+    width: 90%;
+}
+
+.store a {
+    text-decoration: none;
+}
+
+/*弹出层*/
+#divLayer {
+    background: #33393c none repeat scroll 0 0;
+    height: 100%;
+    left: 0;
+    opacity: 0.4;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+/*弹出层布局，现在暂时不用*/
+/*.openWrap {
+    background: #fff none repeat scroll 0 0;
+    border-radius: 5px;
+    display: none;
+    margin: 0 auto;
+    overflow: hidden;
+    /*padding: 20px 0;!1!
+    position: fixed;
+    width: 80%;
+    min-height: 200px;
+}*/
+
+
+/*弹出层---终端名称*/
+.openWrap {
+    background: #fff none repeat scroll 0 0;
+    border-radius: 5px;
+    display: none;
+    margin: 0 auto;
+    overflow: hidden;
+    padding-left: 20px;
+    left: 0;
+    position: absolute;
+    width: 90%;
+    min-height: 250px;
+}
+
+/*终端名称样式*/
+.btnSure {
+   /* padding-top: 10px;
+    padding-bottom: 10px;*/
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.icon_helper {
+    left: 5px;
+    left: 5px;
+    overflow-wrap: break-word;
+    position: absolute;
+    top: 2px;
+    width: 16px;
+    color: #999999;
+    text-align: center;
+    font-size: 13px;
+}
+
+.jf_help {
+    text-align: left;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+
+.jf_help_info {
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+.terminal {
+    background-color: #459FE5;
+    color: #fff;
+    height: 100px;
+}
+
+.terminal_img {
+    position: absolute;
+    bottom: 15px;
+}
+
+.terminal_info {
+    position: absolute;
+    bottom: 10px;
+    left: 90px;
+}
+.terminal_item {
+    display: inline-block;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    width: 90%;
+}
+.terminal_logo {
+    border-radius: 10px;
+    width: 60px;
+    height: 60px;
+}
+
+.txtarea {
+    width: 100%;
+    min-height: 100px;
+    max-height: 200px;
+    padding: 7px 7px 7px 7px;
+}
+
+/*上传按钮*/
+.upload_btn {
+    text-align: center;
+    margin-top: 30px;
+    /*line-height: 37px;
+    height: 37px;*/
+    padding-left: 20px;
+    padding-right: 20px;
+}

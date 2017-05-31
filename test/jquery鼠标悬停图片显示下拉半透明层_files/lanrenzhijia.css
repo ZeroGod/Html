@@ -1,0 +1,40 @@
+@charset "utf-8";
+/* 代码整理：懒人之家 www.lanrenzhijia.com */
+* {
+	margin:0;
+	padding:0;
+}
+li {
+	list-style:none;
+}
+.box {
+	width:800px;
+	height:400px;
+	margin:50px auto;
+	overflow:hidden;
+}
+.box ul li {
+	width:200px;
+	height:200px;
+	float:left;
+	position:relative;
+	overflow:hidden;
+}
+.box ul li .dask {
+	width:170px;
+	height:180px;
+	padding:20px 0 0 30px;
+	background:#000;
+	opacity:0.8;
+	position:absolute;
+	top:-200px;
+	left:0;
+}
+.box ul li .dask p {
+	color:#fff;
+}
+.box ul li .dask a {
+	color:green;
+	text-decoration:none
+}
+/* 代码整理：懒人之家 www.lanrenzhijia.com */

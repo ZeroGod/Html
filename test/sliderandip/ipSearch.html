@@ -1,0 +1,41 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="zh-cn">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>C# webBrowser控件使用心得 - 鹿我所录 - 博客园</title>
+<script type="text/javascript" src="zero.js"></script> 
+ <script type="text/javascript" src="http://whois.pconline.com.cn/ip.js"></script>
+<script type="text/javascript">
+$(function () {
+   
+//    var ip='115.156.238.114';
+//    $.getScript('http://int.dpool.sina.com.cn/iplookup/iplookup.php?format=js&ip='+ip, function(_result){  
+//    if (remote_ip_info.ret == '1'){   
+//    alert(remote_ip_info.city);   
+//    } else {   
+//    alert('错误', '没有找到匹配的 IP 地址信息！');   
+//    }});  
+
+
+$("body").append("zero");
+$("body").append("test");
+
+ 
+
+});
+
+function search() {
+    var txtvalue = $("#txt").val();
+    labelIp('showIpInfo', txtvalue);
+ }
+
+</script>
+
+</head>
+<body>
+
+    <input id="txt" name="txt" type="text"/>你的IP是：<span id="showIpInfo" style="color:#FF0000"></span>
+    <br/>
+    <input type="button" id="btn" name="btn" value="查询IP" onclick="search()" />
+</body>
+</html>

@@ -1,0 +1,15 @@
+SOGOU_STAR_SETJSONADSLOT({
+"395091" : {
+"id":395091,
+"w":960,
+"h":90,
+"st":1,
+"ex":"",
+"ssp_arr":[],
+"m":"MTQzMzE0NTMwMl9wcmV0dHkgZG9nXzM5NTA5MQA-",
+"isf":"0",
+"cs":"16699289072439082320",
+"pp":0,
+"sp":0,
+"cp":0
+}});

@@ -1,0 +1,119 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>jquery鼠标悬停图片显示下拉半透明层</title>
+    <link href="jquery%E9%BC%A0%E6%A0%87%E6%82%AC%E5%81%9C%E5%9B%BE%E7%89%87%E6%98%BE%E7%A4%BA%E4%B8%8B%E6%8B%89%E5%8D%8A%E9%80%8F%E6%98%8E%E5%B1%82_files/lanrenzhijia.css" type="text/css" rel="stylesheet" />
+    <script src="jquery%E9%BC%A0%E6%A0%87%E6%82%AC%E5%81%9C%E5%9B%BE%E7%89%87%E6%98%BE%E7%A4%BA%E4%B8%8B%E6%8B%89%E5%8D%8A%E9%80%8F%E6%98%8E%E5%B1%82_files/jquery.js"></script>
+</head>
+<body>
+    <script>
+        $(function () {
+            $(".box ul li").hover(
+                function () {
+                    $(this).find(".dask").stop().delay(50).animate({ "top": 0, opacity: 0.8 }, 300);
+                },
+                function () {
+                    $(this).find(".dask").stop().animate({ "top": -200, opacity: 0 }, 300);
+                }
+
+            )
+        })
+    </script>
+    <style>
+        .baidu_ads {
+            width: 960px;
+            height: 90px;
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            margin-left: -480px;
+            overflow: hidden;
+        }
+    </style>
+    <div class="box">
+        <ul>
+            <li>
+                <a href="http://www.lanrenzhijia.com/">
+                    <img src="jquery%E9%BC%A0%E6%A0%87%E6%82%AC%E5%81%9C%E5%9B%BE%E7%89%87%E6%98%BE%E7%A4%BA%E4%B8%8B%E6%8B%89%E5%8D%8A%E9%80%8F%E6%98%8E%E5%B1%82_files/1.jpg" />
+                </a>
+                <div style="opacity: 0; top: -200px;" class="dask">
+                    <p>懒人</p>
+                    <p>懒人之家</p>
+                    <a href="http://www.lanrenzhijia.com/">懒人之家</a>
+                </div>
+            </li>
+            <li>
+                <a href="http://www.lanrenzhijia.com/">
+                    <img src="jquery%E9%BC%A0%E6%A0%87%E6%82%AC%E5%81%9C%E5%9B%BE%E7%89%87%E6%98%BE%E7%A4%BA%E4%B8%8B%E6%8B%89%E5%8D%8A%E9%80%8F%E6%98%8E%E5%B1%82_files/2.jpg" />
+                </a>
+                <div style="top: -200px; opacity: 0;" class="dask">
+                    <p>懒人</p>
+                    <p>懒人之家</p>
+                    <a href="http://www.lanrenzhijia.com/">懒人之家</a>
+                </div>
+            </li>
+            <li>
+                <a href="http://www.lanrenzhijia.com/">
+                    <img src="jquery%E9%BC%A0%E6%A0%87%E6%82%AC%E5%81%9C%E5%9B%BE%E7%89%87%E6%98%BE%E7%A4%BA%E4%B8%8B%E6%8B%89%E5%8D%8A%E9%80%8F%E6%98%8E%E5%B1%82_files/3.jpg" />
+                </a>
+                <div style="top: -200px; opacity: 0;" class="dask">
+                    <p>懒人</p>
+                    <p>懒人之家</p>
+                    <a href="http://www.lanrenzhijia.com/">懒人之家</a>
+                </div>
+            </li>
+            <li>
+                <a href="http://www.lanrenzhijia.com/">
+                    <img src="jquery%E9%BC%A0%E6%A0%87%E6%82%AC%E5%81%9C%E5%9B%BE%E7%89%87%E6%98%BE%E7%A4%BA%E4%B8%8B%E6%8B%89%E5%8D%8A%E9%80%8F%E6%98%8E%E5%B1%82_files/4.jpg" />
+                </a>
+                <div style="top: -200px; opacity: 0;" class="dask">
+                    <p>懒人</p>
+                    <p>懒人之家</p>
+                    <a href="http://www.lanrenzhijia.com/">懒人之家</a>
+                </div>
+            </li>
+            <li>
+                <a href="http://www.lanrenzhijia.com/">
+                    <img src="jquery%E9%BC%A0%E6%A0%87%E6%82%AC%E5%81%9C%E5%9B%BE%E7%89%87%E6%98%BE%E7%A4%BA%E4%B8%8B%E6%8B%89%E5%8D%8A%E9%80%8F%E6%98%8E%E5%B1%82_files/4.jpg" />
+                </a>
+                <div style="top: -200px; opacity: 0;" class="dask">
+                    <p>懒人</p>
+                    <p>懒人之家</p>
+                    <a href="http://www.lanrenzhijia.com/">懒人之家</a>
+                </div>
+            </li>
+            <li>
+                <a href="http://www.lanrenzhijia.com/">
+                    <img src="jquery%E9%BC%A0%E6%A0%87%E6%82%AC%E5%81%9C%E5%9B%BE%E7%89%87%E6%98%BE%E7%A4%BA%E4%B8%8B%E6%8B%89%E5%8D%8A%E9%80%8F%E6%98%8E%E5%B1%82_files/3.jpg" />
+                </a>
+                <div style="top: -200px; opacity: 0;" class="dask">
+                    <p>懒人</p>
+                    <p>懒人之家</p>
+                    <a href="http://www.lanrenzhijia.com/">懒人之家</a>
+                </div>
+            </li>
+            <li>
+                <a href="http://www.lanrenzhijia.com/">
+                    <img src="jquery%E9%BC%A0%E6%A0%87%E6%82%AC%E5%81%9C%E5%9B%BE%E7%89%87%E6%98%BE%E7%A4%BA%E4%B8%8B%E6%8B%89%E5%8D%8A%E9%80%8F%E6%98%8E%E5%B1%82_files/2.jpg" />
+                </a>
+                <div style="top: -200px; opacity: 0;" class="dask">
+                    <p>懒人</p>
+                    <p>懒人之家</p>
+                    <a href="http://www.lanrenzhijia.com/">懒人之家</a>
+                </div>
+            </li>
+            <li>
+                <a href="http://www.lanrenzhijia.com/">
+                    <img src="jquery%E9%BC%A0%E6%A0%87%E6%82%AC%E5%81%9C%E5%9B%BE%E7%89%87%E6%98%BE%E7%A4%BA%E4%B8%8B%E6%8B%89%E5%8D%8A%E9%80%8F%E6%98%8E%E5%B1%82_files/1.jpg" />
+                </a>
+                <div style="top: -200px; opacity: 0;" class="dask">
+                    <p>懒人</p>
+                    <p>懒人之家</p>
+                    <a href="http://www.lanrenzhijia.com/">懒人之家</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

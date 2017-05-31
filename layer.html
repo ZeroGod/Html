@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="shortcut icon" href="favicon.ico">
+    <title>弹出层</title>
+    <link rel="stylesheet" type="text/css" href="css/layer.css">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/zxcommon.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $(".top-menu").on("click", function () {
+                zhouxiong.zerogod.confirmNew().init({
+                    html: ("显示内容"),
+                    sure: function () {
+                    }
+                });
+            });
+
+        })
+    </script>
+</head>
+<body>
+    <div class="top-menu ft18">弹出层</div>
+</body>
+</html>

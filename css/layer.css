@@ -1,0 +1,162 @@
+﻿/*全局声明*/
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    font-size: 62.5%;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd, input, a, table, img, hr, textarea, strong {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #fff;
+    min-width: 320px;
+    word-wrap: break-word; /**font-size: 1.2rem;**/
+    color: #555;
+    word-break: break-all;
+}
+/**清除浮动**/
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.clearfix {
+    display: inline-block;
+}
+
+* html .clearfix {
+    height: 1%;
+}
+
+.clearfix {
+    display: block;
+}
+
+.clear {
+    clear: both;
+    height: 0;
+    font: 0/0 Arial;
+    visibility: hidden;
+}
+
+/*-----------------------字号--------------------------*/
+.ft12 {
+    font-size: 1.2rem;
+}
+
+.ft13 {
+    font-size: 1.3rem;
+}
+
+.ft14 {
+    font-size: 1.4rem;
+}
+
+.ft15 {
+    font-size: 1.5rem;
+}
+
+.ft16 {
+    font-size: 1.6rem;
+}
+
+.ft17 {
+    font-size: 1.7rem;
+}
+
+.ft18 {
+    font-size: 1.8rem;
+}
+
+
+.bind-btn {
+    position: fixed;
+    bottom: 10px;
+    width: 100%;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+/*1px x 1px transparent gif*/
+.openWrap {
+    border-radius: 5px;
+    overflow: hidden;
+    display: none;
+    width: 80%;
+    padding: 20px 0;
+    margin: 0px auto;
+    background: #FFF;
+    position: fixed;
+    _position: absolute;
+}
+
+.opCon {
+    background: #fff;
+}
+
+.opTitle {
+    width: 100%;
+    color: #303030;
+    text-align: center;
+    border-bottom: #f0f0f0 solid 1px;
+}
+
+    .opTitle p {
+        line-height: 30px;
+    }
+
+.w-btn-affirm {
+    width: 100%;
+    display: inline-block;
+    height: 30px;
+    font: 1.8rem/48px 'microsoft yahei';
+    color: #c00000;
+    text-align: center;
+}
+
+.w-btn-cannel, .w-btn-cd-qr {
+    width: 50%;
+    box-sizing: border-box;
+    border-right: #f0f0f0 solid 1px;
+    height: 30px;
+    line-height: 48px;
+    text-decoration: none;
+}
+
+
+.w-btn-cannel {
+    color: #888;
+}
+/*撤单弹窗*/
+.openWrap-cd {
+    padding: 20px 0 0;
+}
+
+a.w-white:link, .a.w-white:visited {
+    color: #fff;
+    text-decoration: none;
+}
+
+a.w-white:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+.w-btn-orange-gos {
+    display: block;
+    width: 162px;
+    height: 38px;
+    line-height: 38px;
+    margin: 0 auto;
+    background: #ff5d40;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 1.8rem;
+    cursor: pointer;
+}

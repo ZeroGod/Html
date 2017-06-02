@@ -12,7 +12,7 @@ zhongjiu.integral.getintegral = (function () {
     var defaults = {
         pageIndex: 1,//当前页序号
         boxCollection: 'showDiv0',//填充html盒子
-        infoUrl: "http://api.match.vip.hexun.com/Rank.aspx",//请求地址
+        infoUrl: "data.json",//请求地址
         methName: "RankListMonth",//方法名
         interId: 0,
         storeId: 0,
@@ -173,8 +173,7 @@ zhongjiu.integral.getintegral = (function () {
         $.ajax({
             type: "GET",
             url: defaults.infoUrl,
-            jsonp: "callback",
-            dataType: "jsonp",
+            dataType: "json",
             data: { "methodname": defaults.methName, "p": defaults.pageIndex, "dir": defaults.dir },
             success: function (data) {
                 switch (defaults.methName) {

@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta id="viewport" name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1,user-scalable=no">
+    <meta name="format-detection" content="telephone=yes,email=no">
+    <title>我的优惠券</title>
+    <link rel="stylesheet" type="text/css" href="css/integralstyle.css">
+    <link rel="stylesheet" type="text/css" href="css/iscroll-css.css">
+    <link rel="stylesheet" type="text/css" href="css/swiper.min.css">
+    <script type="text/javascript" src="js/jquery-1.js"></script>
+    <script type="text/javascript" src="js/swiper-3.4.2.jquery.min.js"></script>
+    <script type="text/javascript" src="js/iscroll.js"></script>
+    <script type="text/javascript" src="js/integralsouce.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            zhongjiu.integral.getintegral().init({ methName: "RankListMonth", dir: 0 });
+        });
+    </script>
+</head>
+<body>
+    <div>
+        <div id="container">
+            <div class="header">
+                <div class="integral-tab">
+                    <div class="rank-a clearfix">
+                        <a href="javascript:void(0)"><span class="subNav cur" direction="0">可用优惠券</span></a>
+                        <a href="javascript:void(0)"><span class="subNav" direction="1">历史优惠券</span></a>
+                    </div>
+                </div>
+                <div class="yhj-rule ft14">
+                    <span>使用规则</span>
+                </div>
+            </div>
+            <div id="wrapperscroll" style="overflow: hidden; top: 75px;">
+                <div id="scroller">
+                    <div id="pullDown" class=""></div>
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+
+                            <div class="swiper-slide">
+                                <div class="yhj-list showDiv0"></div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="yhj-list showDiv1"></div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div id="pullUp" class=""></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

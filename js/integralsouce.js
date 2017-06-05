@@ -17,6 +17,7 @@ zhongjiu.integral.getintegral = (function () {
         interId: 0,
         storeId: 0,
         dir: 0,
+        preDir: 0,//当前导航之前的导航的方向
         id: 0,
         pageUrl: "",
         count: 1,//请求数
@@ -146,21 +147,25 @@ zhongjiu.integral.getintegral = (function () {
             observeParents: true,
             // pagination: '.swiper-pagination',
             onTransitionEnd: function (swiper) {
-                defaults.myScroll.scrollTo(0, 0);//重置位置，防止下拉加载也执行
-                defaults.myScroll.refresh();//滚动更新
-                $('.showDiv0').empty();
-                $('.showDiv1').empty();
-                $('.subNav').removeClass("cur");
-                $('.subNav').eq(defaults.mySwiper.activeIndex).addClass('cur');
-                defaults.pageIndex = 1;
-                defaults.dir = defaults.mySwiper.activeIndex;
-                if (defaults.mySwiper.activeIndex == 1) {
-                    defaults.boxCollection = "showDiv1";
-                } else {
-                    defaults.boxCollection = "showDiv0";
+                //禁止没有滑动到新的导航时，触发加载事件
+                if (defaults.mySwiper.activeIndex != defaults.preDir) {
+                    defaults.myScroll.scrollTo(0, 0);//重置位置，防止下拉加载也执行
+                    defaults.myScroll.refresh();//滚动更新
+                    $('.showDiv0').empty();
+                    $('.showDiv1').empty();
+                    $('.subNav').removeClass("cur");
+                    $('.subNav').eq(defaults.mySwiper.activeIndex).addClass('cur');
+                    defaults.pageIndex = 1;
+                    defaults.dir = defaults.mySwiper.activeIndex;
+                    defaults.preDir = defaults.mySwiper.activeIndex;
+                    if (defaults.mySwiper.activeIndex == 1) {
+                        defaults.boxCollection = "showDiv1";
+                    } else {
+                        defaults.boxCollection = "showDiv0";
+                    }
+                    defaults.count = 1;
+                    getData();
                 }
-                defaults.count = 1;
-                getData();
             }
         });
         //首次加载页面调用方法

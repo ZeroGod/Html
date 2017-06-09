@@ -56,7 +56,7 @@ width:8px;bottom:7px;top:2px;right:1px
 }
 
 
-.loading{background:url('/Images/ajax-loader.gif')no-repeat 35% center;}
+.loading{background:url('/images/ajax-loader.gif')no-repeat 35% center;}
 .addnew {
     height: 10px;
     font-size: 16px;

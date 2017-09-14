@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+	<head lang="en">
+		<!-- 禁止HTML缓存 -->
+		<meta charset="utf-8">
+		<meta http-equiv="Cache-Control" content="no-cache,must-revalidate">
+		<meta http-equiv="pragma" content="no-cache">
+		<meta http-equiv="expires" content="-1">
+		<!-- 移动设备支持 -->
+		<meta name="format-detection" content="telephone=no, address=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+		<meta name="apple-touch-fullscreen" content="yes">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0, user-scalable=no">
+		<title>选择渠道商</title>
+		<link rel="stylesheet" type="text/css" href="css/public.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<script src="js/jquery.2.1.4.min.js"></script>
+		<script src="js/adaptive-version2.js"></script>
+		<script>
+			window['adaptive'].desinWidth = 640;
+			        window['adaptive'].baseFont = 12;
+			        window['adaptive'].init();
+		</script>
+	</head>
+
+	<body>
+		<div class="orderContainer orderContainer2 bg">
+			<!--当前店铺 start-->
+			<section class="select_channels">
+				<div class="pd25 pd26 clear col555 bgfff borbot fs32">
+					<p class="left">渠道商A</p>
+  					<label name="zfb" class="hidden" for="zfb"></label>
+				</div>
+				<div class="pd25 pd26 clear col555 bg borbot fs32">
+					<p class="left">渠道商B</p>
+					<label name="zfb" class="" for="zfb"></label>
+				</div>
+				<div class="pd25 pd26 clear col555 bgfff borbot fs32">
+					<p class="left">渠道商C</p>
+					<label name="zfb" class="hidden" for="zfb"></label>
+				</div>
+			</section>
+			<!--当前店铺 end-->
+		</div>
+	</body>
+	<script src="js/common.js"></script>
+	<script>
+		$(function(){
+			$(".select_channels >div").on("click",function(){
+//				alert($(".select_channels >div").length);
+				$(this).removeClass("bgfff").siblings().addClass("bgfff");
+				$(this).find("label").removeClass("hidden").parent().siblings().find("label").addClass("hidden");
+			});
+		});
+	</script>
+
+</html>

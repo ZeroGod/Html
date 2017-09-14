@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+	<head lang="en">
+		<!-- 禁止HTML缓存 -->
+		<meta charset="utf-8">
+		<meta http-equiv="Cache-Control" content="no-cache,must-revalidate">
+		<meta http-equiv="pragma" content="no-cache">
+		<meta http-equiv="expires" content="-1">
+		<!-- 移动设备支持 -->
+		<meta name="format-detection" content="telephone=no, address=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+		<meta name="apple-touch-fullscreen" content="yes">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0, user-scalable=no">
+		<title>提交成功</title>
+		<link rel="stylesheet" type="text/css" href="css/public.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<script src="js/jquery.2.1.4.min.js"></script>
+		<script src="js/adaptive-version2.js"></script>
+		<script>
+			window['adaptive'].desinWidth = 640;
+			window['adaptive'].baseFont = 12;
+			window['adaptive'].init();
+		</script>
+	</head>
+
+	<body>
+		<div class="orderContainer bgfff">
+			<section class="submitContainer">
+				<div class="submit_imgtip"></div>
+				<p class="fs28 col555 text-center">订单提交成功</p>
+				<div class="linkothers text-center clear">
+					<a href="" class="red fs28">继续订购</a>
+					<a href="" class="fs28 col555">查看订单</a>
+				</div>
+				<!--订单 start-->
+				<div class="submitOrders">
+					<p class="fs28 colyew">已为您生成两个订单：</p>
+					<div class="submitOrder_item borbot2 fs26">
+						<p class="col555">订单1</p>
+						<span class="col999 disp">供货商：山东蓬莱金鑫酒行有限公司</span>
+						<span class="col999 disp">订单编号：100045788</span>
+					</div>
+					<div class="submitOrder_item fs26">
+						<p class="col555">订单2</p>
+						<span class="col999 disp">供货商：山东蓬莱金鑫酒行有限公司</span>
+						<span class="col999 disp">订单编号：100045788</span>
+					</div>
+				</div>
+				<!--订单 end-->
+			</section>
+		</div>
+	</body>
+	<script>
+		$(function() {
+			// 发票类型
+			$(".invoice_sort p span").on("click", function() {
+				$(this).addClass("on").siblings().removeClass("on");
+				$(this).find("i").removeClass("hidden").parent().siblings().find("i").addClass("hidden");
+			})
+			var label = $(".check_box label");
+			$('.check_box label').click(function() {
+				var radioId = $(this).attr('name');
+				label.removeAttr('class') && $(this).attr('class', 'active');
+				$('input[type="radio"]').removeAttr('checked') && $('#' + radioId).attr('checked', 'checked');
+			});
+		});
+	</script>
+
+</html>

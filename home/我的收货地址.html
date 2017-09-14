@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head lang="en">
+	    <!-- 禁止HTML缓存 -->
+	    <meta charset="utf-8">
+	    <meta http-equiv="Cache-Control" content="no-cache,must-revalidate">
+	    <meta http-equiv="pragma" content="no-cache">
+	    <meta http-equiv="expires" content="-1">
+	    <!-- 移动设备支持 -->
+	    <meta name="format-detection" content="telephone=no, address=no">
+	    <meta name="apple-mobile-web-app-capable" content="yes">
+	    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	    <meta name="apple-touch-fullscreen" content="yes">
+	    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0, user-scalable=no">
+	    <title>我的收货地址</title>
+	    <link rel="stylesheet" type="text/css" href="css/public.css" />
+	    <link rel="stylesheet" type="text/css" href="css/index.css" />
+	    <script src="js/jquery.2.1.4.min.js"></script>
+	    <script src="js/adaptive-version2.js"></script>
+	    <script>
+	        window['adaptive'].desinWidth = 640;
+	        window['adaptive'].baseFont = 12;
+	        window['adaptive'].init();
+	    </script>
+	</head>
+
+	<body>
+	    <div class="orderContainer orderContainer2 bg">
+	        <!--收货地址 start  -->
+	        <section class="bgfff rea">
+	            <div class="myaddr borbot clear height110">
+	            	<div class="left check_box">
+						<span class="left">
+							<input type="radio" id="zfb" checked="checked" name="zfb" value="zfb">
+	  						<label name="zfb" class="active" for="zfb"></label>
+						</span>
+					</div>
+					<div class="left addruser_info">
+						<p class="col555 fs28">李思悦 <span>13812568898</span></p>
+						<p class="col999">北京市朝阳区高碑店村108号明阳大厦2层</p>
+					</div>
+					<div class="right eidtbox">
+						<a href="" class="disp addr_edit"></a>
+					</div>
+	            </div>
+	            <div class="myaddr borbot clear height110">
+	            	<div class="left check_box">
+						<span class="left">
+							<input type="radio" id="zfb" checked="checked" name="zfb" value="zfb">
+	  						<label name="zfb" class="checked" for="zfb"></label>
+						</span>
+					</div>
+					<div class="left addruser_info">
+						<p class="col555 fs28">李思悦 <span>13812568898</span></p>
+						<p class="col999">北京市朝阳区高碑店村108号明阳大厦2层</p>
+					</div>
+					<div class="right eidtbox">
+						<span class="addr_edit disp"></span>
+					</div>
+	            </div>
+	           <!--新增收货地址 start-->
+	           	<div class="bgfff myaddr_add fs28 ">
+	           		<a href="" class="col555 ">
+	           			<i class="addr_add left"></i>
+	           			<p class="left">新增收货地址</p>
+	           		</a>
+	           	</div>
+	           <!--新增收货地址 end-->
+	        </section>
+	        <!--收货地址 end  -->
+	    </div>
+	</body>
+	<script src="js/common.js"></script>
+	<script>
+		$(".eidtbox a").mousedown(function(){
+			$(this).addClass("on").delay(8000).attr("href","新增收货地址.html");
+		})
+		$(".myaddr_add a").mousedown(function(){
+			$(this).addClass("on").delay(8000).attr("href","新增收货地址.html");
+		})
+	</script>
+</html>

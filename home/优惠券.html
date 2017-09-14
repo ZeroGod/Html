@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+	<head lang="en">
+		<!-- 禁止HTML缓存 -->
+		<meta charset="utf-8">
+		<meta http-equiv="Cache-Control" content="no-cache,must-revalidate">
+		<meta http-equiv="pragma" content="no-cache">
+		<meta http-equiv="expires" content="-1">
+		<!-- 移动设备支持 -->
+		<meta name="format-detection" content="telephone=no, address=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+		<meta name="apple-touch-fullscreen" content="yes">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0, user-scalable=no">
+		<title>使用优惠券</title>
+		<link rel="stylesheet" type="text/css" href="css/public.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<script src="js/jquery.2.1.4.min.js"></script>
+		<script src="js/adaptive-version2.js"></script>
+		<script>
+			window['adaptive'].desinWidth = 640;
+			window['adaptive'].baseFont = 12;
+			window['adaptive'].init();
+		</script>
+	</head>
+
+	<body>
+		<div class="yuntuContainer">
+			<section class="quan_cont">
+				<div class="quan_usedfalse fs28 col999 rea">不适用优惠券
+					<div class="check_box">
+						<span>
+							<input type="radio" id="zfb" checked="checked" name="zfb" value="zfb">
+	  						<label name="zfb" class="" for="zfb"></label>
+						</span>
+					</div>
+				</div>
+				<!--优惠券 start-->
+				<section class="pd3">
+					<div class="quanSame rea quanSame3 quan300">
+						<div class="rea quan_info_top overflow">
+							<span class="left quan_price"><em>￥</em>300</span>
+							<span class="left">
+								<b>优惠券</b>
+								<i>满1000元可用满1000元可用</i>
+							</span>
+						</div>
+						<div class="quan_info_bot">
+							<p class="user">御羊庄靖远羊羔肉爆炒牛犊肉专用</p>
+							<p class="time">有效期至：2017.05.31</p>
+						</div>
+						<div class="check_box">
+							<span>
+								<input type="radio" id="zfb" checked="checked" name="zfb" value="zfb">
+		  						<label name="zfb" class="" for="zfb"></label>
+							</span>
+						</div>
+					</div>
+					<div class="quanSame rea quanSame2 quan300">
+						<div class="rea quan_info_top overflow">
+							<span class="left quan_price"><em>￥</em>300</span>
+							<span class="left">
+								<b>优惠券</b>
+								<i>满1000元可用满1000元可用</i>
+							</span>
+						</div>
+						<div class="quan_info_bot">
+							<p class="user">御羊庄靖远羊羔肉爆炒牛犊肉专用</p>
+							<p class="time">使用期限：2017.05.15~2017.05.31</p>
+						</div>
+						<div class="check_box">
+							<span>
+								<input type="radio" id="zfb" checked="checked" name="zfb" value="zfb">
+		  						<label name="zfb" class="" for="zfb"></label>
+							</span>
+						</div>
+					</div>
+					<div class="quanSame rea quan300">
+						<div class="rea quan_info_top overflow">
+							<span class="left quan_price"><em>￥</em>300</span>
+							<span class="left">
+								<b>优惠券</b>
+								<i>满1000元可用满1000元可用</i>
+							</span>
+						</div>
+						<div class="quan_info_bot">
+							<p class="user">御羊庄靖远羊羔肉爆炒牛犊肉专用</p>
+							<p class="time">使用期限：2017.05.15~2017.05.31</p>
+						</div>
+						<div class="check_box">
+							<span>
+								<input type="radio" id="zfb" checked="checked" name="zfb" value="zfb">
+		  						<label name="zfb" class="" for="zfb"></label>
+							</span>
+						</div>
+					</div>
+					<!--优惠券 end-->
+				</section>
+			</section>
+		</div>
+	</body>
+	<script type="text/javascript">
+		$(function(){
+			var label = $(".quan_cont .check_box label");
+			$('.check_box label').click(function() {
+				var radioId = $(this).attr('name');
+				label.removeAttr('class') && $(this).attr('class', 'active');
+				$('input[type="radio"]').removeAttr('checked') && $('#' + radioId).attr('checked', 'checked');
+			});
+		})
+	</script>
+</html>

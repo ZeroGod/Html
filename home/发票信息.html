@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+	<head lang="en">
+		<!-- 禁止HTML缓存 -->
+		<meta charset="utf-8">
+		<meta http-equiv="Cache-Control" content="no-cache,must-revalidate">
+		<meta http-equiv="pragma" content="no-cache">
+		<meta http-equiv="expires" content="-1">
+		<!-- 移动设备支持 -->
+		<meta name="format-detection" content="telephone=no, address=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+		<meta name="apple-touch-fullscreen" content="yes">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0, user-scalable=no">
+		<title>发票信息</title>
+		<link rel="stylesheet" type="text/css" href="css/public.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<script src="js/jquery.2.1.4.min.js"></script>
+		<script src="js/adaptive-version2.js"></script>
+		<script>
+			window['adaptive'].desinWidth = 640;
+			window['adaptive'].baseFont = 12;
+			window['adaptive'].init();
+		</script>
+	</head>
+
+	<body>
+		<div class="orderContainer bgfff">
+			<!--发票类型 start  -->
+			<section class="invoice_sort borbot">
+				<p class="col555">发票类型</p>
+				<p><span class="on" idx="0">电子发票<i></i></span>
+				<span class="pd18" idx="0">纸质发票<i class="hidden"></i></span>
+				<span idx="0">不开发票<i class="hidden"></i></span></p>
+			</section>
+			<!--发票类型 end  -->
+			<!--发票信息 start -->
+			<section class="invoice_same invoice_info borbot col555">
+				<p class="left">发票信息</p>
+				<div class="left check_box check_box2">
+					<span class="left">
+						<input type="radio" id="zfb" checked="checked" name="zfb" value="zfb">
+  						<label name="zfb" class="active" for="zfb"></label>
+					</span>
+					<b class="left zfbao"><span></span>个人</b >
+				</div>
+				<div class="left check_box">
+					<span class="left">
+						<input type="radio" id="zfb" checked="checked" name="zfb" value="zfb">
+  						<label name="zfb" class="" for="zfb"></label>
+  						<b class="left zfbao"><span></span>公司</b >
+					</span>
+				</div>
+		</section>
+		<!--发票信息 end -->
+		<!-- start -->
+		<section class="invoice_same invoice_title clear borbot col555">
+			<label for="" class="left">发票抬头</label>
+			<input type="text" name="" value="" placeholder="请输入发票抬头" class="invoice_input">
+		</section>
+		<section class="invoice_same invoice_title clear borbot col555">
+			<label for="" class="left">纳税人识别码</label>
+			<input type="text" name="" value="" placeholder="请输入纳税人识别码" class="invoice_input">
+		</section>
+		<section class="invoice_same invoice_title clear borbot col555">
+			<label for="" class="left">手机号码</label>
+			<input type="tel" name="" value="" placeholder="请输入手机号码" class="invoice_input">
+		</section>
+		<!-- end -->
+		<p class="makesure_btn">确定</p>
+		</div>
+	</body>
+	<script src="js/common.js"></script>
+	<script>
+		$(function() {
+			// 发票类型
+			$(".invoice_sort p span").on("click", function() {
+				$(this).addClass("on").siblings().removeClass("on");
+				$(this).find("i").removeClass("hidden").parent().siblings().find("i").addClass("hidden");
+			})
+			
+		});
+	</script>
+
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <!-- 禁止HTML缓存 -->
+    <meta charset="utf-8">
+    <meta http-equiv="Cache-Control" content="no-cache,must-revalidate">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="expires" content="-1">
+    <!-- 移动设备支持 -->
+    <meta name="format-detection" content="telephone=no, address=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0, user-scalable=no">
+    <title>进货下单</title>
+    <link rel="stylesheet" type="text/css" href="css/public.css" />
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <script src="js/jquery.2.1.4.min.js"></script>
+    <script src="js/adaptive-version2.js"></script>
+    <script>
+        window['adaptive'].desinWidth = 640;
+        window['adaptive'].baseFont = 12;
+        window['adaptive'].init();
+    </script>
+</head>
+
+<body>
+    <div class="orderContainer bg">
+        <!--店铺 start  -->
+        <section class="borbot order_store bgfff rea">
+            <p><i class="icon_store bgsize"></i>金鑫酒行</p>
+            <span class="disp"><i class="icon_addr bgsize"></i>北京市朝阳区惠河南街261号楼</span>
+            <b class="icon_right disp"></b>
+        </section>
+        <!--店铺 end  -->
+        <!--供货商start  -->
+        <section class="borbot bgfff pd28 pd25 rea">
+            <p class="order_supplier col999"><i class="icon_user"></i>请选择供货商</p>
+            <b class="icon_right disp"></b>
+        </section>
+        <!--end  -->
+        <!--搜索商品 start  -->
+        <section class="searchProd bgfff borbot rea">
+            <input type="text" name="" value="" class="seachBox" placeholder="搜索商品名称">
+            <i class="disp order_search"></i>
+            <i class="disp sear_del"></i>
+        </section>
+        <!--搜索商品 end  -->
+
+        <!--商品列表 start  -->
+        <section class="prodList">
+            <div class="prod_item overflow bgfff borbot rea">
+            	<a href="http://www.baidu.com">
+	                <div class="prod_item_img left">
+	                    <img src="img/prod_img1.jpg" alt="商品图片">
+	                </div>
+	                <div class="prod_item_txt left">
+	                    <p>天佑德海拔3500</p>
+	                    <span class="col999 disp">箱规：1*6 <em>月售500瓶</em></span>
+	                    <span class="col999 disp">渠道商：金鑫兰州酒行</span>
+	                    <b>￥<em class="price">1008</em>/瓶</b>
+	                </div>
+	                <div class="right edit_num">
+	                    <b class="order_sub disp left"></b>
+	                    <b class="order_num disp left col999">3</b>
+	                    <b class="order_add disp left"></b>
+	                </div>
+                </a>
+            </div>
+            <div class="prod_item overflow bgfff borbot rea">
+            	<a href="">
+	                <div class="prod_item_img left">
+	                    <img src="img/prod_img1.jpg" alt="商品图片">
+	                </div>
+	                <div class="prod_item_txt left">
+	                    <p>天佑德海拔3500</p>
+	                    <span class="col999 disp">箱规：1*6 <em>月售500瓶</em></span>
+	                    <span class="col999 disp">渠道商：金鑫兰州酒行</span>
+	                    <b>￥<em class="price">1008</em>/瓶</b>
+	                </div>
+	                <div class="right edit_num">
+	                    <b class="order_sub disp left"></b>
+	                    <b class="order_num disp left col999">3</b>
+	                    <b class="order_add disp left"></b>
+	                </div>
+                </a>
+            </div>
+            <div class="prod_item overflow bgfff borbot rea">
+            	<a href="">
+	                <div class="prod_item_img left">
+	                    <img src="img/prod_img1.jpg" alt="商品图片">
+	                </div>
+	                <div class="prod_item_txt left">
+	                    <p>天佑德海拔3500</p>
+	                    <span class="col999 disp">箱规：1*6 <em>月售500瓶</em></span>
+	                    <span class="col999 disp">渠道商：金鑫兰州酒行</span>
+	                    <b>￥<em class="price">1008</em>/瓶</b>
+	                </div>
+	                <div class="right edit_num">
+	                    <b class="order_add disp left"></b>
+	                </div>
+               </a>
+            </div>
+        </section>
+        <!-- <section class="prodList_none">
+            <p class="prodList_noneImg"><img src="img/prodnone.png" alt=""></p>
+            <span>该店铺暂无在售商品</span>
+            <span>请输入商品名称添加商品</span>
+        </section> -->
+        <!--商品列表 end  -->
+    </div>
+    <!--底部购物车 start  -->
+    <section class="footer">
+        <p class="left rea shopcar"><i>4</i></p>
+        <p class="total left">合计：<em class="red">￥10008</em></p>
+        <span class="right disp">确认</span>
+    </section>
+    <!--底部购物车 end  -->
+</body>
+<script>
+    $(function() {
+        // 搜索商品
+        $(".searchProd input").focus(function() {
+            $(".searchProd").find(".order_search").fadeOut();
+            $(".searchProd").find(".sear_del").css("opacity", 1);
+            $(this).attr("placeholder", "");
+            $(this).css("padding", ' 0 0.2rem 0 0.2rem');
+            $(this).css("width", "5.6rem");
+        });
+        $(".searchProd .sear_del").on("click", function() {
+                // $(this).css("opacity", '0');
+                // $(this).parent().find(".order_search").fadeIn();
+                $(this).parent().find("input").val("");
+            })
+            // 购物车加减
+        $(".order_add").on("click", function() {
+            var n = $(this).prev().text();
+            // console.log(n);
+            var num = parseInt(n) + 1;
+            if (num == 0) return;
+            $(this).prev().text(num);
+        });
+        $(".order_sub").on("click", function() {
+            var n = $(this).next().text();
+            console.log(n);
+            var num = parseInt(n) - 1;
+            console.log(num);
+            if (num == 0) return;
+            $(this).next().text(num);
+        });
+        var s = 0;
+        $(".prodList .prod_item").each(function() {
+            if ($(this).find(".order_num").text() != '') {
+                s += parseInt($(this).find(".price").text()) * parseInt($(this).find(".order_num").text());
+                console.log(s);
+                return s;
+            }
+        })
+        $(".footer .total").text(s);
+    })
+</script>
+
+</html>

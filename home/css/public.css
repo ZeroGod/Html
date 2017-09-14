@@ -1,0 +1,124 @@
+@charset "UTF-8";
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+p,
+form,
+img,
+table,
+tr,
+th {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font: 12px/1.5 "微软雅黑", Arial, Tahoma, Helvetica, sans-serif;
+    color: #444444;
+}
+
+/*body,
+html {
+    width: 100%;
+    height: 100%;
+}*/
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    border: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+i,
+em {
+    font-style: normal;
+}
+
+b {
+    font-weight: inherit;
+}
+
+.disp {
+    display: block;
+}
+
+input,
+button,
+textarea {
+    outline: none;
+}
+
+.hidden {
+    display: none;
+}
+
+.ma {
+    margin: 0 auto;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.clear {
+    clear: both;
+    overflow: hidden;
+}
+
+
+/*多行文本省略显示*/
+
+.line-clamp {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.overflow {
+    overflow: hidden;
+}
+
+.rea {
+    position: relative;
+}
+
+.icon_right {
+    float: right;
+    display: block;
+    width: 0.2rem;
+    height: 0.2rem;
+    border-left: 1px solid #cccccc;
+    border-top: 1px solid #cccccc;
+    position: absolute;
+    top: 50%;
+    transform: rotate(135deg) translateX(-50%);
+    right: 0.35rem;
+}

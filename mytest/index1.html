@@ -1,234 +1,248 @@
 ﻿<!DOCTYPE html>
 <html>
 
-	<head lang="en">
-		<!-- 禁止HTML缓存 -->
-		<meta charset="utf-8">
-		<meta http-equiv="Cache-Control" content="no-cache,must-revalidate">
-		<meta http-equiv="pragma" content="no-cache">
-		<meta http-equiv="expires" content="-1">
-		<!-- 移动设备支持 -->
-		<meta name="format-detection" content="telephone=no, address=no">
-		<meta name="apple-mobile-web-app-capable" content="yes">
-		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-		<meta name="apple-touch-fullscreen" content="yes">
-		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0, user-scalable=no">
-		<title>完善资料</title>
-		<link rel="stylesheet" type="text/css" href="css/public.css" />
-		<link rel="stylesheet" type="text/css" href="css/index.css" />
-		<script src="js/jquery.2.1.4.min.js"></script>
-		<script src="js/adaptive-version2.js"></script>
-		<script>
-			window['adaptive'].desinWidth = 750;
-			window['adaptive'].baseFont = 12;
-			window['adaptive'].init();
-		</script>
-	</head>
+<head lang="en">
+    <!-- 禁止HTML缓存 -->
+    <meta charset="utf-8">
+    <meta http-equiv="Cache-Control" content="no-cache,must-revalidate">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="expires" content="-1">
+    <!-- 移动设备支持 -->
+    <meta name="format-detection" content="telephone=no, address=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0, user-scalable=no">
+    <title>终端详情</title>
+    <link rel="stylesheet" type="text/css" href="css/public.css" />
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <script src="js/jquery.2.1.4.min.js"></script>
+    <script src="js/highstock.js"></script>
+    <script src="js/adaptive-version2.js"></script>
+    <script>
+        window['adaptive'].desinWidth = 750;
+        window['adaptive'].baseFont = 12;
+        window['adaptive'].init();
+    </script>
+</head>
 
-	<body>
-		<div class="pd8 bg">
-			<section class="bgfff overflow">
-				<p class="fs28 borbot lh28 pd24"><i class="line"></i>终端信息</p>
-				<p class="fs28 pd24 borbot rea info_picture">
-					<em class="red">*</em>门头照
-					<span class="right"><img src="img/info_img.jpg"/></span>
-					<i class="icon_right"></i>
-				</p>
-				<p class="fs28 pd24 borbot rea info_picture">
-					<em class="red">*</em>终端名称
-					<input type="text" name="" id="" value="中酒连锁" class="right col999 text-right" />
-				</p>
-				<div class="fs28 pd24 borbot rea info_picture select_info">
-					<em class="red">*</em>终端类型
-					<i class="icon_right"></i>
-					<b class="right col999">非现饮</b>
-				</div>
-				<div class="fs28 pd24 borbot rea info_picture select_info">
-					<em class="red">*</em>终端等级
-					<b class="right col999">B</b>
-					<i class="icon_right"></i>
-				</div>
-				<p class="fs28 pd24 borbot rea info_picture">
-					营业面积
-					<b class="right col555">㎡</b>
-					<input type="text" name="" id="" value="300 " class="right col999 text-right" />
-				</p>
-				<p class="fs28 pd24 borbot rea info_picture">
-					最大库存
-					<b class="right col555">&nbsp;箱</b>
-					<input type="text" name="" id="" value="1000" class="right col999 text-right" />
-				</p>
-				<p class="fs28 pd24 borbot overflow info_timeDate">
-					<em class="left">经营年份</em>
-					<i class="right icon-time"></i>
-					<input type="text" class="timeDate right" readonly="readonly" value="" placeholder="2017-08-07" />
-				</p>
-			</section>
-			<section class="pt15">
-				<div class="bgfff overflow">
-					<p class="fs28 borbot lh28 pd24"><i class="line"></i>联系方式</p>
-					<p class="fs28 pd24 borbot rea info_picture">
-						<em class="red">*</em>负责人
-						<input type="text" value="王晓棠" class="right col999 text-right" />
-					</p>
-					<p class="fs28 pd24 borbot rea info_phone">
-						<em class="red">*</em>联系方式
-						<input type="text" placeholder="请输入联系方式" />
-					</p>
-					<p class="fs28 pd24 borbot rea info_picture">
-						营业电话
-						<input type="text" value="010-123345678" class="right col999 text-right" />
-					</p>
-					<div class="fs28 pd24 borbot rea info_picture select_info">
-						<em class="red">*</em>地理归属
-						<b class="right col999">城区</b>
-						<i class="icon_right"></i>
-					</div>
-					<div class="borbot pd28 rea overflow addAddr">
-						<label class="left pd27"><em class="red ">*</em>详细地址</label>
-						<!-- 省市区 -->
-						<div class="form_list form_list1">
-							<input type="text" value="" class="select1 col555" readonly="readonly" />
-							<input type="text" value="" class="select1 col555" readonly="readonly" />
-							<input type="text" value="" class="select1 col555" readonly="readonly" />
-							<input type="text" class="inputhidden" placeholder="小区/街道/大厦/学校名称" />
-						</div>
-						<em class="icon_right"></em>
-					</div>
-					<p class="borbot rea info_addr">
-						<input type="text" placeholder="请输入终端详细楼号/门牌号等，例如A座F102" />
-					</p>
-				</div>
-			</section>
-			<section class="pt15">
-				<div class="bgfff overflow">
-					<p class="fs28 borbot lh28 pd24"><i class="line"></i>合作情况</p>
-					<div class="fs28 pd24 borbot rea info_picture select_info">
-						<em class="red">*</em>合作方式
-						<b class="right col999">专销</b>
-						<i class="icon_right"></i>
-					</div>
-					<div class="fs28 pd24 borbot rea info_picture select_info">
-						<em class="red">*</em>供货商
-						<b class="right col999">大众和</b>
-						<i class="icon_right"></i>
-					</div>
-					<div class="fs28 pd24 borbot rea info_picture select_info">
-						<em class="red">*</em>展现方式
-						<b class="right col999">生动化</b>
-						<i class="icon_right"></i>
-					</div>
-					<p class="fs28 pd24 borbot overflow info_remark">
-						备注
-						<textarea name="" rows="" cols="" placeholder="请输入备注信息"></textarea>
-					</p>
-					<div class="fs28 pd24 borbot overflow info_remark">
-						<span class="left">上传照片：</span>
-						<section class="img-section left">
-							<div class="z_photo upimg-div left rea">
-								<section class="z_file ">
-									<img src="img/addpic.png" class="add-img">
-									<input type="file" name="file" id="file2" class="file" value="" accept="image/jpg,image/jpeg,image/png,image/bmp" multiple />
-								</section>
-							</div>
-						</section>
-					</div>
-				</div>
-			</section>
-			<aside class="mask works-mask">
-				<div class="mask-content">
-					<p class="del-p">您确定要删除作品图片吗？</p>
-					<p class="check-p"><span class="del-com wsdel-ok">确定</span><span class="wsdel-no">取消</span></p>
-				</div>
-			</aside>
-			<div class="makesure"><a href="javascript:void(0)">确认修改</a></div>
-		</div>
-		<div class="shadeanimate"></div>
-		<div class="shadeText">
-			<div>
-				<p class="fs28 col555 pd24 text-center borbot">请选择终端类型</p>
-				<div class="pd24 overflow  borbot">
-					<!--<b class="left rea"></b>-->
-					<i class="left rea"></i>
+<body>
+<div class="orderListContainer bg">
+    <section class="pt15">
+        <div class="select rea bgfff">
+            <i class="icon_triangle icon_bot"></i>
+            <p class="col555 fs28 borbot rea pd27 pd28">中酒网</p>
+        </div>
+    </section>
+    <section class="pt15">
+        <div class="bgfff ">
+            <div class=" rea pd27 overflow pd28 borbot">
+                <span class="shop_logo left"><img src="img/info_img.jpg"/></span>
+                <p class="left fs28 ter_shopName col555">中酒时代酒业（北京）有限公司</p>
+                <i class="icon_right"></i>
+            </div>
+            <div class="borbot overflow ter_shopyh">
+                <p class="left pd27 fs28 col555 boright">
+                    <span class="text-center">积分</span>
+                    <span class="text-center red">2000分</span>
+                </p>
+                <p class="left pd27 fs28 col555 boright">
+                    <span class="text-center">优惠券</span>
+                    <span class="text-center red">3张</span>
+                </p>
+                <p class="left pd27 fs28 col555">
+                    <span class="text-center">促销优惠</span>
+                    <span class="text-center red">2个</span>
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="pt15">
+        <div class="bgfff myOrder">
+            <p class="fs28 borbot lh28 pd24"><i class="line"></i>我的订单
+                <a href="" class="right">查看全部&gt;</a>
+            </p>
+            <div class="myOrder_category overflow pd24">
+                <p class="left">
+                    <span class="disp myOrder_wait rea"><img src="img/pes_11.png"/><em>10</em></span>
+                    <b>待配送</b>
+                </p>
+                <p class="left">
+                    <span class="disp myOrder_peing rea"><img src="img/pes_12.png"/><em>5</em></span>
+                    <b>配送中</b>
+                </p>
+                <p class="left">
+                    <span class="disp myOrder_unsettled rea"><img src="img/pes_13.png"/><em>2</em></span>
+                    <b>未结清</b>
+                </p>
+                <p class="left">
+                    <span class="disp myOrder_finised rea"><img src="img/pes_10.png"/><em>10</em></span>
+                    <b>已完成</b>
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="pt15">
+        <div class="bgfff myOrder">
+            <p class="fs28 borbot lh28 pd24"><i class="line"></i>订单记录
+                <a href="订单分析.html" class="right">查看全部&gt;</a>
+            </p>
+            <div class="order_recordTit borbot pd28">
+                <span class="on">本周</span>
+                <span>本月</span>
+                <span>本季度</span>
+                <span>今年</span>
+                <span>自定义</span>
+            </div>
+            <div class="order_recordContent">
+                <!--本周 start-->
+                <section class="pt15">
+                    <div class="bgfff overflow">
+                        <!--统计图 start-->
+                        <div class="echartBox" id="echartBox">
+                            <div class="echartcont" id="echartcont">
 
-					<span class="left disp fs28 text-left">现饮</span>
-				</div>
-				<div class="pd24 overflow  borbot">
-					<!--<b class="left rea active"></b>-->
-					<i class="left rea active"></i>
-					<span class="left disp fs28 red text-left">非现饮</span>
-				</div>
-				<div class="pd24 overflow  borbot">
-					<!--<b class="left rea"></b>-->
-					<i class="left rea"></i>
+                            </div>
+                        </div>
+                        <!--统计图 end-->
+                    </div>
+                </section>
+                <!--本周 end-->
 
-					<span class="left disp fs28 text-left">现饮</span>
-				</div>
-				<div class="pd24 overflow  borbot">
-					<!--<b class="left rea"></b>-->
-					<i class="left rea"></i>
+                <!--本月 start-->
+                <section class="pt15 hidden">
+                    <div class="bgfff overflow" echartBox>
+                        <!--统计图 start-->
+								
+                        <!--统计图 end-->
+                    </div>
+                </section>
+                <!--本月 end-->
 
-					<span class="left disp fs28 text-left">现饮</span>
-				</div>
-				<a href="javascript:void(0)" class="disp masksureBtn fs32">确定</a>
-			</div>
-		</div>
-		<script src="js/imgUp.js"></script>
-		<script src="js/scroll-select.js"></script>
-		<script>
-			$(function() {
-				$(".select_info").each(function() {
-					$(this).on("click", function() {
-						$(".shadeanimate,.shadeText").addClass("tarnslateY");
-					});
-				});
-				$(".masksureBtn").on("click", function(obj) {
-					$(".shadeanimate,.shadeText").removeClass("tarnslateY");
-				});
-				
-				//多选
-				$(".shadeText b").on("click",function(){
-					var $this = $(this);
-					if(!$this.hasClass("active")){
-						$this.addClass("active");
-						$(this).parent().find("span").addClass("red");
-					}else {
-						$this.removeClass("active");
-						$(this).parent().find("span").removeClass("red");
-					}
-				})
-				
-				//单选
-				$(".shadeText i").on("click",function(){
-					$(this).addClass("active").parent().find("span").addClass("red");
-					$(this).parent().siblings().find("i").removeClass("active");
-					$(this).parent().siblings().find("span").removeClass("red");
-				})
-				
-				//省市区联动
-				$('.form_list1').on('click', function() {
-					$.getJSON("data/city.json", function(result) {
-						scrollSelect.go({
-							data: result,
-							level: 3,
-							elArr: '.select1',
-							type: 'address'
-						})
-					});
-				});
-				$(".form_list1 .inputhidden").focus(function() {
-					$(this).attr("placeholder", "");
-				});
-				//日期
-				$('.info_timeDate').on('click', function() {
-					scrollSelect.go({
-						level: 3,
-						elArr: '.timeDate',
-						type: 'calendar'
-					})
-				});
-			})
-		</script>
-	</body>
+                <!--本季度 start-->
+                <section class="pt15 hidden">
+                    <div class="bgfff overflow" echartBox>
+                        <!--统计图 start-->
+								
+                        <!--统计图 end-->
+                    </div>
+                </section>
+                <!--本季度 end-->
 
+                <!--今年 start-->
+                <section class="pt15 hidden">
+                    <div class="bgfff overflow" echartBox>
+                        <!--统计图 start-->
+							
+                        <!--统计图 end-->
+                    </div>
+                </section>
+                <!--今年 end-->
+
+                <!--自定义 start-->
+                <section class="pt15 hidden">
+                    <div class="bgfff overflow" echartBox>
+                        <!--统计图 start-->
+								
+                        <!--统计图 end-->
+                    </div>
+                </section>
+                <!--自定义 end-->
+            </div>
+        </div>
+    </section>
+    <div class="selectText">
+        <p class="col555 fs28 borbot rea pd24"><em>中酒连锁1</em><i class="icon_rg"></i></p>
+        <ul class="bgfff">
+            <li class="col555 fs28 borbot rea pd24">中酒连锁1</li>
+            <li class="col555 fs28 borbot rea pd24">中酒连锁2</li>
+            <li class="col555 fs28 borbot rea pd24">中酒连锁3</li>
+            <li class="col555 fs28 borbot rea pd24">中酒网1</li>
+            <li class="col555 fs28 borbot rea pd24">中酒网2</li>
+            <li class="col555 fs28 borbot rea pd24">中酒网3</li>
+        </ul>
+    </div>
+</div>
+<script src="js/echarts.min.js" type="text/javascript" charset="utf-8"></script>
+</body>
+<script type="text/javascript">
+    $(function () {
+
+        $("#echartcont").highcharts({
+            chart: {
+                type: 'column',
+                style: {
+                    fontFamily: '微软雅黑'
+                },
+                panning: true,
+                zoomType: null,
+                pinchType: null
+            },
+            loading: {
+                hideDuration: 1000,
+                showDuration: 1000
+            },
+            title: {
+                text: '当月销售额明细',
+                floating: true,
+                align: 'left',
+                x: 0,
+                y: 20,
+                style: {
+                    "fontSize": ".2150rem",
+                    color: '#1d1d26'
+                }
+            },
+            tooltip: {
+                followTouchMove: false,
+                shared: true,
+                enabled: false
+            },
+            rangeSelector: {
+                selected: 1
+            },
+            scrollbar: {
+                enabled: false
+            },
+            navigator: {
+                enabled: false
+            },
+            plotOptions: {
+                series: {
+                    dataLabels: {
+                        align: 'center',
+                        enabled: true
+                    }
+                }
+            },
+            legend: {
+                align: 'right',
+                verticalAlign: 'top',
+                x: 0,
+                y: 20
+            },
+            yAxis: {
+                allowDecimals: false,
+                title: {
+                    text: null
+                }
+            },
+            xAxis: {
+                type: 'linear',
+                lables: {
+                    step: 2,
+                    staggerLines: 1
+                },
+                allowDecimals: false,
+                categories: [1, 2, 3, 4, 5, 6, 7],
+                crosshair: false,
+                max: 3
+            },
+            series: [{
+                name: '销售额（万元）',
+                data: [29.9, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6]
+            }]
+        });
+    });
+</script>
 </html>
